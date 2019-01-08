@@ -156,9 +156,9 @@ public class Glide implements ComponentCallbacks2 {
   }
 
   /**
-   * Get the singleton.
-   *
-   * @return the singleton
+   * 实例化glide
+   * @param context
+   * @return
    */
   @NonNull
   public static Glide get(@NonNull Context context) {
@@ -319,6 +319,7 @@ public class Glide implements ComponentCallbacks2 {
         + " processor will generate a correct implementation.", e);
   }
   //目前重要的就是Engine,GlideContext,Registry
+  //三级缓存  弱引用 LurCache 网络
   Glide(
       @NonNull Context context,
       @NonNull Engine engine,

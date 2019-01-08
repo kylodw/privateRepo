@@ -3,7 +3,6 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation "com.android.support:support-annotations:${ANDROID_SUPPORT_VERSION}"
 
-    testImplementation project(':testutil')
     testImplementation "com.android.support:support-v4:${ANDROID_SUPPORT_VERSION}"
     testImplementation "com.google.truth:truth:${TRUTH_VERSION}"
     testImplementation "junit:junit:${JUNIT_VERSION}"

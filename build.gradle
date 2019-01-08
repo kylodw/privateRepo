@@ -142,12 +142,12 @@ subprojects { project ->
                 && project.name != 'pmd'
                 && project.name != 'findbugs') {
             android {
-                lintOptions {
-                    warningsAsErrors true
-                    quiet true
-                    // Caught by the violations plugin.
-                    abortOnError false
-                }
+//                lintOptions {
+//                    warningsAsErrors true
+//                    quiet true
+//                    // Caught by the violations plugin.
+//                    abortOnError false
+//                }
             }
 
             android.variantFilter { variant ->

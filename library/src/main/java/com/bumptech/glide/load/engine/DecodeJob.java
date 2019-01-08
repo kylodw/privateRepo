@@ -48,6 +48,7 @@ class DecodeJob<R> implements DataFetcherGenerator.FetcherReadyCallback,
   private final Pools.Pool<DecodeJob<?>> pool;
   private final DeferredEncodeManager<?> deferredEncodeManager = new DeferredEncodeManager<>();
   private final ReleaseManager releaseManager = new ReleaseManager();
+  //git pull origin master --allow-unrelated-histories
 
   private GlideContext glideContext;
   private Key signature;
