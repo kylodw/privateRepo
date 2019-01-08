@@ -444,7 +444,7 @@ public class RequestManagerRetriever implements Handler.Callback {
       // TODO(b/27524013): Factor out this Glide.get() call.
       Glide glide = Glide.get(context);
       requestManager =
-          //factory 就是DEFAULT_FACTORY
+          //factory 就是RequestManagerFactory DEFAULT_FACTORY
           factory.build(
               glide, current.getGlideLifecycle(), current.getRequestManagerTreeNode(), context);
       //将RequestManager绑定到fm
